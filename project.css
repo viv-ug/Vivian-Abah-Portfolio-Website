@@ -1,0 +1,549 @@
+
+/* ============================
+   PROJECT DETAIL PAGE
+   ============================ */
+
+.project-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 7rem 4rem 5rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--crimson);
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  transition: opacity 0.2s;
+}
+
+.back-link:hover {
+  opacity: 0.7;
+}
+
+/* Two-column layout */
+.project-detail {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* LEFT — info */
+
+.detail-category {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.detail-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 0.6rem;
+}
+
+.detail-meta {
+  font-size: 1rem;
+  color: var(--crimson);
+  margin-bottom: 1.2rem;
+  display: block;
+}
+
+.detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.detail-tag {
+  background: rgba(124, 45, 62, 0.08);
+  color: var(--crimson);
+  border: 1px solid rgba(124, 45, 62, 0.2);
+  border-radius: 20px;
+  padding: 0.25rem 0.85rem;
+  font-size: 0.9rem;
+}
+
+.detail-description p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.detail-subhead {
+  font-size: 1.3rem;
+  color: var(--crimson);
+  margin: 1.5rem 0 0.8rem;
+}
+
+.detail-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-list li {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  padding-left: 1.2rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.detail-list li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  color: var(--crimson);
+  font-size: 0.7rem;
+  top: 0.2rem;
+}
+
+/* ============================
+   LAPTOP MOCKUP
+   ============================ */
+
+.project-detail-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  min-width: 0;
+  width: 100%;
+}
+
+.laptop-mockup {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  filter: drop-shadow(0 16px 40px rgba(0, 0, 0, 0.18));
+}
+
+/* Laptop display frame */
+.laptop-screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  box-sizing: border-box;
+  padding: 10px;
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-bottom: none;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+}
+
+/* Camera dot */
+.laptop-screen::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  background: #555;
+  border-radius: 50%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Inner screen */
+.laptop-screen-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: #000;
+  border-radius: 2px;
+}
+
+/* Video inside laptop screen */
+.laptop-screen-inner .laptop-demo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
+  border: 0;
+  background: #000;
+}
+
+/* Keep video controls within the screen */
+.laptop-screen-inner video.laptop-demo {
+  cursor: pointer;
+}
+
+/* Laptop base / hinge */
+.laptop-base {
+  position: relative;
+  width: 100%;
+  height: 18px;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #444, #252525 45%, #171717);
+  border: 1px solid #333;
+  border-top: 1px solid #555;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Central hinge detail */
+.laptop-notch {
+  width: 60px;
+  height: 5px;
+  background: #111;
+  border-radius: 0 0 6px 6px;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.08);
+}
+
+/* Optional keyboard deck, if used in your HTML */
+.laptop-keyboard {
+  background: linear-gradient(to bottom, #2a2a2a, #222);
+  border-radius: 0 0 12px 12px;
+  padding: 10px 16px 14px;
+  border: 1px solid #333;
+  border-top: none;
+}
+
+.laptop-keys {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.laptop-keys span {
+  background: #333;
+  border-radius: 3px;
+  height: 10px;
+  display: block;
+  box-shadow: 0 1px 0 #111;
+}
+
+.laptop-spacebar {
+  width: 40%;
+  height: 10px;
+  background: #333;
+  border-radius: 3px;
+  margin: 0 auto;
+  box-shadow: 0 1px 0 #111;
+}
+
+.mockup-hint {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  opacity: 0.7;
+  text-align: center;
+  margin: 0;
+}
+
+
+/* ============================
+   OTHER GRAPHIC WORKS
+   ============================ */
+
+.other-works {
+  padding: 7rem 0 4rem;
+  color: var(--text);
+}
+
+.other-works-heading {
+  max-width: 650px;
+  margin-bottom: 3rem;
+}
+
+.other-works-eyebrow {
+  color: var(--crimson);
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.other-works-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+  color: var(--text);
+}
+
+.other-works-title span {
+  color: var(--crimson);
+}
+
+.other-works-intro {
+  max-width: 480px;
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--text-light);
+}
+
+/* Gallery grid */
+.other-works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+/* Individual graphic cards */
+.graphic-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+  background: #fffaf3;
+  border: 1px solid rgba(124, 45, 62, 0.12);
+  border-radius: 5px;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.graphic-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(65, 35, 35, 0.12);
+}
+
+/* Artwork preview: consistent dimensions for every card */
+.graphic-card-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: var(--cream-dark, #ecddc8);
+}
+
+.graphic-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 0.45s ease;
+}
+
+.graphic-card:hover .graphic-card-image img {
+  transform: scale(1.035);
+}
+
+/* Card number */
+.graphic-card-number {
+  display: none;
+}
+
+/* Card text: consistent alignment */
+.graphic-card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1.25rem 1.1rem;
+  flex: 1;
+  min-height: 110px;
+}
+
+.graphic-card-info > div {
+  min-width: 0;
+}
+
+.graphic-card-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #1a1a1a;
+  margin: 0 0 0.4rem;
+  overflow-wrap: anywhere;
+}
+
+.graphic-card-info p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  line-height: 1.6;
+  font-weight: 300;
+  color: #776b64;
+  margin: 0;
+}
+
+.graphic-card-arrow {
+  flex-shrink: 0;
+  color: #7c2d3e;
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+}
+
+.graphic-card:hover .graphic-card-arrow {
+  transform: translate(3px, -3px);
+}
+
+/* Closing note */
+.other-works-footer {
+  text-align: center;
+  color: var(--crimson);
+  font-size: 1.35rem;
+  margin: 3.5rem 0 0;
+}
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+
+/* Tablet and smaller laptops */
+@media (max-width: 1024px) {
+  .project-detail {
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+  }
+
+  .project-page {
+    padding: 7rem 2.5rem 4rem;
+  }
+
+  .other-works {
+    padding-top: 5.5rem;
+  }
+
+  .other-works-grid {
+    gap: 1.25rem;
+  }
+
+  .graphic-card-info {
+    padding: 1rem;
+  }
+}
+
+/* Mobile and small tablets */
+@media (max-width: 768px) {
+  .project-detail {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .project-detail-visual {
+    order: -1;
+  }
+
+  .project-page {
+    padding: 6rem 1.5rem 4rem;
+  }
+
+  .detail-title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .other-works {
+    padding-top: 5rem;
+  }
+
+  .other-works-heading {
+    margin-bottom: 2rem;
+  }
+
+  .other-works-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+    align-items: stretch;
+  }
+
+  .graphic-card-info {
+    min-height: 115px;
+  }
+
+  .graphic-card-info h3 {
+    font-size: 1.05rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .project-page {
+    padding: 5.5rem 1rem 3rem;
+  }
+
+  .detail-tags {
+    gap: 0.4rem;
+  }
+
+  .detail-tag {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .laptop-screen {
+    padding: 6px;
+    border-width: 2px;
+  }
+
+  .laptop-base {
+    height: 12px;
+  }
+
+  .laptop-notch {
+    width: 42px;
+    height: 4px;
+  }
+
+  .other-works {
+    padding-top: 4rem;
+  }
+
+  .other-works-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .graphic-card-image {
+    aspect-ratio: 4 / 5;
+  }
+
+  .graphic-card-info {
+    padding: 1.1rem;
+    min-height: 100px;
+  }
+
+  .other-works-footer {
+    margin-top: 2.5rem;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .graphic-card,
+  .graphic-card-image img,
+  .graphic-card-arrow,
+  .back-link {
+    transition: none;
+  }
+
+  .graphic-card:hover {
+    transform: none;
+  }
+
+  .graphic-card:hover .graphic-card-image img {
+    transform: none;
+  }
+
+  .graphic-card:hover .graphic-card-arrow {
+    transform: none;
+  }
+}

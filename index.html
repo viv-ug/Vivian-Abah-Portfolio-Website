@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vivian Abah — My Little Creative Space</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader-screen" id="loader">
+    <div class="vinyl-player">
+      <div class="vinyl-record">
+        <div class="vinyl-groove g1"></div>
+        <div class="vinyl-groove g2"></div>
+        <div class="vinyl-groove g3"></div>
+        <div class="vinyl-label">
+          <div class="vinyl-label-inner">
+            <span class="vinyl-title caveat">Vivian</span>
+            <span class="vinyl-sub caveat">Abah</span>
+          </div>
+        </div>
+        <div class="vinyl-hole"></div>
+      </div>
+    </div>
+    <p class="loader-text caveat">loading my little creative space<span class="dots"></span></p>
+  </div>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-logo">♪ Vivian Abah</div>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#about">about me</a></li>
+      <li><a href="#works">works</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <span class="hero-year caveat">2026</span>
+      <div class="hero-title-wrap">
+        <div class="hero-title-left">
+          <span class="script-big">My little</span>
+          <span class="script-big">creative</span>
+          <span class="script-big">space ✦</span>
+        </div>
+        <span class="photo-inline">
+          <img src="Confident Studio Portrait.png" alt="Vivian Abah" class="polaroid-hero" />
+        </span>
+      </div>
+      <p class="hero-name caveat">— Vivian Abah</p>
+      <div class="hero-doodle">
+        <span class="caveat doodle-note">let's dive in ↓</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHERE ARE YOU GOING -->
+  <section class="destinations" id="works-nav">
+    <h2 class="section-heading caveat">Where are you going?</h2>
+    <p class="section-subheading caveat">choose your destination!</p>
+    <div class="ticket-grid">
+
+      <!-- TICKET SVG path explained:
+           viewBox="-1 -13 157 346" gives room for teeth outside the 0-320 card body.
+           TOP edge (y=0): sharp zigzag teeth pointing UP (to y=-12), full width,
+             with a deep semicircle notch (radius 22) biting DOWN at center (x=55 to x=100).
+           BOTTOM edge (y=320): mirror — teeth point DOWN (to y=332),
+             same semicircle notch biting UP at center.
+           LEFT & RIGHT edges: perfectly straight.
+           Inner rect: y=38 height=244 — sits clear of the teeth zones.
+           Mid dashed line: y=160 — perforation marker.
+      -->
+
+      <a href="#about" class="ticket" id="t1">
+        <svg class="tsvg" viewBox="-1 -13 157 346" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#1f1d2e" d="M0,0 L5,-12 L10,0 L15,-12 L20,0 L25,-12 L30,0 L35,-12 L40,0 L45,-12 L50,0 L55,-12 L60,0 L65,-12 L70,0 L75,-12 L80,0 L85,-12 L90,0 L95,-12 L100,0 L105,-12 L110,0 L115,-12 L120,0 L125,-12 L130,0 L135,-12 L140,0 L145,-12 L150,0 L155,0 L155,320 L150,332 L145,320 L140,332 L135,320 L130,332 L125,320 L120,332 L115,320 L110,332 L105,320 L100,332 L95,320 L90,332 L85,320 L80,332 L75,320 L70,332 L65,320 L60,332 L55,320 L50,332 L45,320 L40,332 L35,320 L30,332 L25,320 L20,332 L15,320 L10,332 L5,320 L0,320 L0,0 Z"/>
+          <rect x="8" y="38" width="139" height="244" rx="2" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+          <line x1="8" y1="160" x2="147" y2="160" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="5,4"/>
+        </svg>
+        <div class="ticket-content">
+          <span class="ticket-num caveat">#000001</span>
+          <div class="ticket-label">ABOUT<br>ME</div>
+          <div class="ticket-dots"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="ticket-icon">👤</div>
+          <span class="ticket-sparkle caveat">✦ ✦</span>
+        </div>
+      </a>
+
+      <a href="#social" class="ticket" id="t2">
+        <svg class="tsvg" viewBox="-1 -13 157 346" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#b03030" d="M0,0 L5,-12 L10,0 L15,-12 L20,0 L25,-12 L30,0 L35,-12 L40,0 L45,-12 L50,0 L55,-12 L60,0 L65,-12 L70,0 L75,-12 L80,0 L85,-12 L90,0 L95,-12 L100,0 L105,-12 L110,0 L115,-12 L120,0 L125,-12 L130,0 L135,-12 L140,0 L145,-12 L150,0 L155,0 L155,320 L150,332 L145,320 L140,332 L135,320 L130,332 L125,320 L120,332 L115,320 L110,332 L105,320 L100,332 L95,320 L90,332 L85,320 L80,332 L75,320 L70,332 L65,320 L60,332 L55,320 L50,332 L45,320 L40,332 L35,320 L30,332 L25,320 L20,332 L15,320 L10,332 L5,320 L0,320 L0,0 Z"/>
+          <rect x="8" y="38" width="139" height="244" rx="2" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+          <line x1="8" y1="160" x2="147" y2="160" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="5,4"/>
+        </svg>
+        <div class="ticket-content">
+          <span class="ticket-num caveat">#000002</span>
+          <div class="ticket-label">SOCIAL<br>MEDIA</div>
+          <div class="ticket-dots"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="ticket-icon">📱</div>
+          <span class="ticket-sparkle caveat">✦ ✦</span>
+        </div>
+      </a>
+
+      <a href="#uiux" class="ticket" id="t3">
+        <svg class="tsvg" viewBox="-1 -13 157 346" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#7c2d3e" d="M0,0 L5,-12 L10,0 L15,-12 L20,0 L25,-12 L30,0 L35,-12 L40,0 L45,-12 L50,0 L55,-12 L60,0 L65,-12 L70,0 L75,-12 L80,0 L85,-12 L90,0 L95,-12 L100,0 L105,-12 L110,0 L115,-12 L120,0 L125,-12 L130,0 L135,-12 L140,0 L145,-12 L150,0 L155,0 L155,320 L150,332 L145,320 L140,332 L135,320 L130,332 L125,320 L120,332 L115,320 L110,332 L105,320 L100,332 L95,320 L90,332 L85,320 L80,332 L75,320 L70,332 L65,320 L60,332 L55,320 L50,332 L45,320 L40,332 L35,320 L30,332 L25,320 L20,332 L15,320 L10,332 L5,320 L0,320 L0,0 Z"/>
+          <rect x="8" y="38" width="139" height="244" rx="2" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+          <line x1="8" y1="160" x2="147" y2="160" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="5,4"/>
+        </svg>
+        <div class="ticket-content">
+          <span class="ticket-num caveat">#000003</span>
+          <div class="ticket-label">UI/UX<br>DESIGN</div>
+          <div class="ticket-dots"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="ticket-icon">🎨</div>
+          <span class="ticket-sparkle caveat">✦ ✦</span>
+        </div>
+      </a>
+
+      <a href="#dev" class="ticket" id="t4">
+        <svg class="tsvg" viewBox="-1 -13 157 346" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#1a2a3e" d="M0,0 L5,-12 L10,0 L15,-12 L20,0 L25,-12 L30,0 L35,-12 L40,0 L45,-12 L50,0 L55,-12 L60,0 L65,-12 L70,0 L75,-12 L80,0 L85,-12 L90,0 L95,-12 L100,0 L105,-12 L110,0 L115,-12 L120,0 L125,-12 L130,0 L135,-12 L140,0 L145,-12 L150,0 L155,0 L155,320 L150,332 L145,320 L140,332 L135,320 L130,332 L125,320 L120,332 L115,320 L110,332 L105,320 L100,332 L95,320 L90,332 L85,320 L80,332 L75,320 L70,332 L65,320 L60,332 L55,320 L50,332 L45,320 L40,332 L35,320 L30,332 L25,320 L20,332 L15,320 L10,332 L5,320 L0,320 L0,0 Z"/>
+          <rect x="8" y="38" width="139" height="244" rx="2" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+          <line x1="8" y1="160" x2="147" y2="160" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="5,4"/>
+        </svg>
+        <div class="ticket-content">
+          <span class="ticket-num caveat">#000004</span>
+          <div class="ticket-label">FRONT-<br>END DEV</div>
+          <div class="ticket-dots"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="ticket-icon">💻</div>
+          <span class="ticket-sparkle caveat">✦ ✦</span>
+        </div>
+      </a>
+
+      <a href="#graphic" class="ticket" id="t5">
+        <svg class="tsvg" viewBox="-1 -13 157 346" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#4a2d56" d="M0,0 L5,-12 L10,0 L15,-12 L20,0 L25,-12 L30,0 L35,-12 L40,0 L45,-12 L50,0 L55,-12 L60,0 L65,-12 L70,0 L75,-12 L80,0 L85,-12 L90,0 L95,-12 L100,0 L105,-12 L110,0 L115,-12 L120,0 L125,-12 L130,0 L135,-12 L140,0 L145,-12 L150,0 L155,0 L155,320 L150,332 L145,320 L140,332 L135,320 L130,332 L125,320 L120,332 L115,320 L110,332 L105,320 L100,332 L95,320 L90,332 L85,320 L80,332 L75,320 L70,332 L65,320 L60,332 L55,320 L50,332 L45,320 L40,332 L35,320 L30,332 L25,320 L20,332 L15,320 L10,332 L5,320 L0,320 L0,0 Z"/>
+          <rect x="8" y="38" width="139" height="244" rx="2" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+          <line x1="8" y1="160" x2="147" y2="160" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="5,4"/>
+        </svg>
+        <div class="ticket-content">
+          <span class="ticket-num caveat">#000005</span>
+          <div class="ticket-label">GRAPHIC<br>DESIGN</div>
+          <div class="ticket-dots"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="ticket-icon">✏️</div>
+          <span class="ticket-sparkle caveat">✦ ✦</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+<!-- ABOUT — envelope style -->
+  <section class="about-section" id="about">
+    <div class="envelope-wrap">
+      
+      <div class="envelope-outer">
+        <div class="envelope-flap"></div>
+        <div class="envelope-body">
+          <svg class="envelope-lines" viewBox="0 0 900 360" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="0" x2="450" y2="360" stroke="rgba(0,0,0,0.15)" stroke-width="2"/>
+            <line x1="900" y1="0" x2="450" y2="360" stroke="rgba(0,0,0,0.15)" stroke-width="2"/>
+          </svg>
+        </div>
+      </div>
+      <div class="letter-card">
+        <div class="letter-polaroid">
+          <img src="Confident Studio Portrait.png" alt="Vivian" />
+          <p class="caveat polaroid-caption">she creates, she codes ✨</p>
+        </div>
+        <div class="letter-text">
+          <h3 class="caveat letter-greeting">Hi, I'm Vivian!</h3>
+          <p>A creative Information Science & Media Studies graduate from Pan Atlantic University. I live at the intersection of storytelling, strategy, and design — building things that look good, feel right, and actually connect with people.</p>
+          <p>From growing social media audiences to designing digital products and writing frontend code, I bring both the creative and technical sides to the table.</p>
+          <div class="stamp">✉</div>
+        </div>
+      </div>
+
+      <!-- 3. Envelope Front Pocket with precise corner-to-center folding lines -->
+      <div class="envelope-pocket">
+        <div class="flap-left"></div>
+        <div class="flap-right"></div>
+        <div class="flap-bottom"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS — notebook spread -->
+  <section class="skills-section" id="skills">
+    <div class="notebook">
+      <div class="notebook-spine"></div>
+      <div class="notebook-left">
+        <div class="notebook-label caveat">Software Skills</div>
+        <div class="skills-icons">
+          <div class="skill-badge"><div class="skill-icon figma-icon">F</div><span class="caveat">Figma</span></div>
+          <div class="skill-badge"><div class="skill-icon pr-icon">Pr</div><span class="caveat">Premiere Pro</span></div>
+          <div class="skill-badge"><div class="skill-icon ae-icon">Ae</div><span class="caveat">After Effects</span></div>
+          <div class="skill-badge"><div class="skill-icon canva-icon">Ca</div><span class="caveat">Canva</span></div>
+          <div class="skill-badge"><div class="skill-icon maya-icon">Ma</div><span class="caveat">Maya 3D</span></div>
+        </div>
+        <div class="tape tape-1"></div>
+        <div class="skills-edu">
+          <div class="edu-stamp caveat">★ Education ★</div>
+          <p class="caveat edu-year">2022 – 2026</p>
+          <p class="edu-school">Pan Atlantic University</p>
+          <p class="caveat edu-degree">B.S. Information Science & Media Studies</p>
+        </div>
+      </div>
+      <div class="notebook-right">
+        <div class="notebook-label caveat">Code Skills</div>
+        <div class="skills-icons">
+          <div class="skill-badge"><div class="skill-icon js-icon">JS</div><span class="caveat">JavaScript</span></div>
+          <div class="skill-badge"><div class="skill-icon react-icon">Re</div><span class="caveat">React</span></div>
+          <div class="skill-badge"><div class="skill-icon html-icon">H5</div><span class="caveat">HTML / CSS</span></div>
+          <div class="skill-badge"><div class="skill-icon py-icon">Py</div><span class="caveat">Python*</span></div>
+        </div>
+        <div class="tape tape-2"></div>
+        <div class="experience-block">
+          <div class="triangle-badge caveat">Experience</div>
+          <div class="exp-list">
+            <div class="exp-item">
+              <p class="caveat exp-date">Aug 2024 – Sep 2024</p>
+              <p class="exp-company">Red Tech Limited</p>
+              <p class="caveat exp-role">UI/UX Designer ✦ Internship</p>
+            </div>
+            <div class="exp-item">
+              <p class="caveat exp-date">Aug 2025 – Sep 2025</p>
+              <p class="exp-company">Tenece Professional Services</p>
+              <p class="caveat exp-role">Frontend Developer ✦ Internship</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section class="works-section" id="works">
+    <h2 class="section-heading caveat">Selected Works</h2>
+
+    <div class="work-category" id="social">
+      <h3 class="category-title caveat">📱 Social Media & Content Strategy</h3>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img"><img src="ekodekoded-cover.jpg.jpeg" alt="EkoDekoded" /></div>
+          <div class="project-info">
+            <h4>EkoDekoded</h4>
+            <p class="caveat project-tag">Social Media Strategy · Twitter/X</p>
+            <p class="caveat project-duration">Nov 2024 – Present</p>
+            <p>Grew the account to 100+ followers with 1.2K+ impressions in 3 months. Content calendars, trend monitoring, and visual creation for a Lagos urban culture brand.</p>
+            <a href="https://x.com/ekodekoded?s=21" target="_blank" class="project-link caveat">view project →</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img"><img src="The GreyRoom.jpeg" alt="The Grey Room Podcast" /></div>
+          <div class="project-info">
+            <h4>The Grey Room Podcast</h4>
+            <p class="caveat project-tag">Content Strategy · Instagram</p>
+            <p class="caveat project-duration">Sep 2025 – Jun 2026</p>
+            <p>Built and maintained the podcast's social presence. Produced content on student life and urban culture, designed visual assets and kept the brand consistent.</p>
+            <a href="https://www.instagram.com/thegreyroom.pausc" target="_blank" class="project-link caveat">view project →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-category" id="uiux">
+      <h3 class="category-title caveat">🎨 UI/UX Design</h3>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img"><img src="REDPAY.png" alt="POS App" /></div>
+          <div class="project-info">
+            <h4>POS & Agency Banking App</h4>
+            <p class="caveat project-tag">UI/UX Design · Red Tech Limited</p>
+            <p>Designed user-friendly interfaces for a POS application, Agency Banking Web & Mobile App, and monitoring dashboard. Conducted user research and usability testing.</p>
+            <a href="project-pos-banking.html" class="project-link caveat">view project →</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img"><img src="BOBA BAR.png" alt="UX Case Study" /></div>
+          <div class="project-info">
+            <h4>UX Case Study</h4>
+            <p class="caveat project-tag">UI/UX Design · Figma</p>
+            <p>Placeholder for an upcoming UX case study — research, wireframes, prototyping, and usability testing.</p>
+            <a href="project-ux-case-study.html" class="project-link caveat">view project →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-category" id="dev">
+      <h3 class="category-title caveat">💻 Frontend Development</h3>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img"><img src="Project Management Web App.png" alt="PM App" /></div>
+          <div class="project-info">
+            <h4>Project Management Web App</h4>
+            <p class="caveat project-tag">React · Frontend Dev · Tenece</p>
+            <p>Built with React — task creation, categorized sections, conditional rendering, reusable components, and API integration. Focused on accessibility and responsive design.</p>
+            <a href="project-management-app.html" class="project-link caveat">view project →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-category" id="graphic">
+      <h3 class="category-title caveat">✏️ Graphic Design</h3>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img"><img src="Faith Talks.png" alt="Graphic Design" /></div>
+          <div class="project-info">
+            <h4>Visual & Motion Design</h4>
+            <p class="caveat project-tag">Canva · After Effects · Premiere Pro</p>
+            <p>Graphics, GIFs, and video content for social media campaigns and brand storytelling. More pieces coming soon.</p>
+            <a href="project-visual-motion.html" class="project-link caveat">view project →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <h2 class="caveat contact-title">Let's make something together ✦</h2>
+      <p class="contact-sub">Open to opportunities, collabs, and good conversations.</p>
+      <a href="mailto:vivian.abah003@gmail.com" class="contact-email caveat">vivian.abah003@gmail.com</a>
+      <div class="contact-links">
+        <a href="https://x.com/ekodekoded?s=21" target="_blank" class="contact-pill caveat">Twitter / X</a>
+        <a href="https://www.instagram.com/vivian.ug?stkn=MWQ1eWx3cTg3NzlhbQ%3D%3D&utm_source=qr" target="_blank" class="contact-pill caveat">Instagram</a>
+        <a href="mailto:vivian.abah003@gmail.com" class="contact-pill caveat">Email me</a>
+      </div>
+    </div>
+    <footer class="site-footer caveat">
+      © 2026 Vivian Abah. All rights reserved.
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
